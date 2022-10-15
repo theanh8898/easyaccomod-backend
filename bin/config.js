@@ -1,0 +1,4 @@
+/**
+ * Config
+ */
+require('dotenv').config();

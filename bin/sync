@@ -1,0 +1,13 @@
+/**
+ * Config
+ */
+require('dotenv').config();
+
+const db = require('../src/models');
+
+db.sequelize.sync({alter: true}).then(function () {
+  console.log('Success');
+  process.exit(0);
+}).catch(function (error) {
+  throw error;
+});
